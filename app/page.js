@@ -464,12 +464,13 @@ const PROJECTS = [
     status: 'ONGOING',
     desc: 'MITM-based SSH honeypot forwarding attacker sessions to a decoy VM. Captures post-exploitation behavior for threat intelligence and TTP analysis.',
     bullets: [
-      'Dual-layer forensic logging \u2014 .log files + SQLite',
+      'Dual-layer forensic logging — .log files + SQLite',
       'Concurrent session handling via threading',
       'Planned deployment on Oracle Cloud infrastructure',
     ],
     tech: ['Python', 'Paramiko', 'SQLite', 'Threading'],
     color: 'emerald',
+    githubUrl: 'https://github.com/Yaseen-Rather/Honey_Pot_Cloud_Python.git',
   },
   {
     icon: ShieldCheck,
@@ -484,11 +485,12 @@ const PROJECTS = [
     ],
     tech: ['Python', 'SQLite', 'SHA-256', 'CLI'],
     color: 'cyan',
+    githubUrl: 'https://github.com/Yaseen-Rather/Tamper-Evident-Logging-System.git',
   },
   {
     icon: KeyRound,
     num: '03',
-    name: 'CryptoVault \u2014 File Encryption Tool',
+    name: 'CryptoVault — File Encryption Tool',
     status: 'ONGOING',
     desc: 'CLI file encryption tool using RSA for asymmetric key exchange and AES for high-performance symmetric encryption.',
     bullets: [
@@ -498,6 +500,7 @@ const PROJECTS = [
     ],
     tech: ['Python', 'RSA', 'AES', 'SHA-256'],
     color: 'emerald',
+    githubUrl: 'https://github.com/Yaseen-Rather/CryptoVault_python.git',
   },
 ]
 
@@ -559,10 +562,15 @@ function Projects() {
                   ))}
                 </div>
 
-                <button className={`text-xs font-mono flex items-center gap-1 ${isBlue ? 'text-cyan-300' : 'text-emerald-300'} group-hover:gap-2 transition-all`}>
+                <a
+                  href={p.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-xs font-mono flex items-center gap-1 ${isBlue ? 'text-cyan-300' : 'text-emerald-300'} group-hover:gap-2 transition-all hover:opacity-80`}
+                >
                   <span>&gt;_ view_details</span>
                   <ChevronRight className="w-3 h-3" />
-                </button>
+                </a>
               </motion.div>
             )
           })}
