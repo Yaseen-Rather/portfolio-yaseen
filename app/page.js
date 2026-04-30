@@ -9,7 +9,7 @@ import {
   Zap, ShieldCheck, Radio, Monitor, KeyRound, Wifi
 } from 'lucide-react'
 
-const RESUME_URL = 'https://customer-assets.emergentagent.com/job_56f17acd-6a15-446a-a320-292be276aa11/artifacts/qo4s7ohd_Yaseen%20Resume%20Latest.pdf'
+const RESUME_URL = '/Yaseen-Resume.pdf'
 const HERO_IMAGE = '/hero-hacker.png'
 
 /* ============ TYPING HOOK ============ */
@@ -461,7 +461,7 @@ const PROJECTS = [
     icon: Bug,
     num: '01',
     name: 'High-Interaction SSH Honeypot',
-    status: 'ONGOING',
+    status: 'COMPLETED',
     desc: 'MITM-based SSH honeypot forwarding attacker sessions to a decoy VM. Captures post-exploitation behavior for threat intelligence and TTP analysis.',
     bullets: [
       'Dual-layer forensic logging — .log files + SQLite',
