@@ -9,7 +9,7 @@ import {
   Zap, ShieldCheck, Radio, Monitor, KeyRound, Wifi
 } from 'lucide-react'
 
-const RESUME_URL = '/Yaseen-Resume.pdf'
+const RESUME_URL = 'https://drive.google.com/file/d/1ZjPSs8ScGppvJDwQAZyRirWgquyTQ7BW/view?usp=drive_link'
 const HERO_IMAGE = '/hero-hacker.png'
 
 /* ============ TYPING HOOK ============ */
